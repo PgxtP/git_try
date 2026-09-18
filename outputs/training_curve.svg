@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+<rect width="100%" height="100%" fill="white"/>
+<text x="400.0" y="30" text-anchor="middle" font-size="20">Transformer training curve</text>
+<line x1="60" y1="440" x2="740" y2="440" stroke="black"/>
+<line x1="60" y1="60" x2="60" y2="440" stroke="black"/>
+<polyline fill="none" stroke="#2563eb" stroke-width="3" points="60.0,60.0 95.8,96.2 131.6,121.0 167.4,144.6 203.2,165.0 238.9,186.1 274.7,206.3 310.5,226.6 346.3,245.6 382.1,266.3 417.9,284.2 453.7,303.2 489.5,321.6 525.3,341.4 561.1,359.4 596.8,372.5 632.6,392.1 668.4,409.0 704.2,426.2 740.0,440.0"/>
+<polyline fill="none" stroke="#dc2626" stroke-width="3" points="60.0,75.1 95.8,84.4 131.6,89.6 167.4,92.8 203.2,93.3 238.9,91.9 274.7,88.6 310.5,85.5 346.3,84.1 382.1,83.8 417.9,82.6 453.7,79.6 489.5,76.5 525.3,75.3 561.1,74.4 596.8,72.5 632.6,70.5 668.4,69.4 704.2,68.2 740.0,67.4"/>
+<text x="590" y="55" fill="#2563eb">train loss</text>
+<text x="690" y="55" fill="#dc2626">validation loss</text>
+<text x="400.0" y="485" text-anchor="middle">epoch</text>
+<text x="15" y="250.0" transform="rotate(-90 15 250.0)" text-anchor="middle">cross-entropy loss</text>
+<text x="52" y="65" text-anchor="end" font-size="12">4.823</text>
+<text x="52" y="445" text-anchor="end" font-size="12">1.967</text>
+</svg>

@@ -1,0 +1,167 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "epochs": 20,
+  "train_examples": 10,
+  "validation_examples": 2,
+  "src_vocab_size": 90,
+  "tgt_vocab_size": 114,
+  "best_validation": {
+    "epoch": 5,
+    "train_loss": 4.034274697303772,
+    "train_token_accuracy": 0.18226600985221675,
+    "val_loss": 4.573384761810303,
+    "val_token_accuracy": 0.10256410256410256
+  },
+  "final_train": {
+    "epoch": 20,
+    "train_loss": 1.9667782187461853,
+    "train_token_accuracy": 0.729064039408867,
+    "val_loss": 4.768016338348389,
+    "val_token_accuracy": 0.15384615384615385
+  },
+  "generated_validation_text": "我了，，，，，，，，，，，，，，，，，，，，，，，，，，，，，",
+  "reference_validation_text": "我<UNK>了<UNK>长时间，<UNK><UNK>得他<UNK><UNK><UNK><UNK><UNK>来。",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 4.823340892791748,
+      "train_token_accuracy": 0.0049261083743842365,
+      "val_loss": 4.709726333618164,
+      "val_token_accuracy": 0.05128205128205128
+    },
+    {
+      "epoch": 2,
+      "train_loss": 4.551092624664307,
+      "train_token_accuracy": 0.04433497536945813,
+      "val_loss": 4.639782428741455,
+      "val_token_accuracy": 0.02564102564102564
+    },
+    {
+      "epoch": 3,
+      "train_loss": 4.364574909210205,
+      "train_token_accuracy": 0.10344827586206896,
+      "val_loss": 4.600471019744873,
+      "val_token_accuracy": 0.07692307692307693
+    },
+    {
+      "epoch": 4,
+      "train_loss": 4.187617778778076,
+      "train_token_accuracy": 0.1724137931034483,
+      "val_loss": 4.576689720153809,
+      "val_token_accuracy": 0.10256410256410256
+    },
+    {
+      "epoch": 5,
+      "train_loss": 4.034274697303772,
+      "train_token_accuracy": 0.18226600985221675,
+      "val_loss": 4.573384761810303,
+      "val_token_accuracy": 0.10256410256410256
+    },
+    {
+      "epoch": 6,
+      "train_loss": 3.8755582571029663,
+      "train_token_accuracy": 0.20689655172413793,
+      "val_loss": 4.5837883949279785,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 7,
+      "train_loss": 3.7239187955856323,
+      "train_token_accuracy": 0.22660098522167488,
+      "val_loss": 4.608666896820068,
+      "val_token_accuracy": 0.10256410256410256
+    },
+    {
+      "epoch": 8,
+      "train_loss": 3.571329951286316,
+      "train_token_accuracy": 0.3054187192118227,
+      "val_loss": 4.631577491760254,
+      "val_token_accuracy": 0.10256410256410256
+    },
+    {
+      "epoch": 9,
+      "train_loss": 3.42785108089447,
+      "train_token_accuracy": 0.3497536945812808,
+      "val_loss": 4.642106533050537,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 10,
+      "train_loss": 3.2726863622665405,
+      "train_token_accuracy": 0.39901477832512317,
+      "val_loss": 4.644490718841553,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 11,
+      "train_loss": 3.1382757425308228,
+      "train_token_accuracy": 0.4482758620689655,
+      "val_loss": 4.653628349304199,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 12,
+      "train_loss": 2.9952783584594727,
+      "train_token_accuracy": 0.4876847290640394,
+      "val_loss": 4.676234722137451,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 13,
+      "train_loss": 2.857032537460327,
+      "train_token_accuracy": 0.5270935960591133,
+      "val_loss": 4.699225425720215,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 14,
+      "train_loss": 2.707923650741577,
+      "train_token_accuracy": 0.5615763546798029,
+      "val_loss": 4.708606719970703,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 15,
+      "train_loss": 2.5723661184310913,
+      "train_token_accuracy": 0.6206896551724138,
+      "val_loss": 4.715036869049072,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 16,
+      "train_loss": 2.473981261253357,
+      "train_token_accuracy": 0.6551724137931034,
+      "val_loss": 4.72937536239624,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 17,
+      "train_loss": 2.3266042470932007,
+      "train_token_accuracy": 0.6847290640394089,
+      "val_loss": 4.744474411010742,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 18,
+      "train_loss": 2.200014352798462,
+      "train_token_accuracy": 0.7044334975369458,
+      "val_loss": 4.752772331237793,
+      "val_token_accuracy": 0.1282051282051282
+    },
+    {
+      "epoch": 19,
+      "train_loss": 2.0703545808792114,
+      "train_token_accuracy": 0.729064039408867,
+      "val_loss": 4.761859893798828,
+      "val_token_accuracy": 0.15384615384615385
+    },
+    {
+      "epoch": 20,
+      "train_loss": 1.9667782187461853,
+      "train_token_accuracy": 0.729064039408867,
+      "val_loss": 4.768016338348389,
+      "val_token_accuracy": 0.15384615384615385
+    }
+  ]
+}
