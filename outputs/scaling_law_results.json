@@ -1,0 +1,271 @@
+{
+  "research_question": "How does additional training compute affect validation loss for one fixed tiny language model?",
+  "controlled_variables": {
+    "seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "training_data": "normalized and deduplicated",
+    "model": "one-layer decoder-only Transformer",
+    "tokenizer": "fixed word-level vocabulary",
+    "validation_documents": [
+      "attention helps models combine context",
+      "clean training data improves models",
+      "validation loss measures model generalization"
+    ]
+  },
+  "changed_variable": "train_steps",
+  "runs": [
+    {
+      "seed": 11,
+      "results_by_step": {
+        "20": {
+          "name": "normalized_and_deduplicated",
+          "seed": 11,
+          "train_steps": 20,
+          "processed_token_count_proxy": 400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 3.364825177192688,
+          "validation_loss": 3.429585814476013,
+          "training_seconds": 0.024205699999999997,
+          "generated_sample": "language models learn models"
+        },
+        "60": {
+          "name": "normalized_and_deduplicated",
+          "seed": 11,
+          "train_steps": 60,
+          "processed_token_count_proxy": 1200,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 1.4726993799209596,
+          "validation_loss": 2.919067144393921,
+          "training_seconds": 0.06424280000000016,
+          "generated_sample": "language models learn models from seeing future"
+        },
+        "120": {
+          "name": "normalized_and_deduplicated",
+          "seed": 11,
+          "train_steps": 120,
+          "processed_token_count_proxy": 2400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 0.39788772612810136,
+          "validation_loss": 3.2661935091018677,
+          "training_seconds": 0.1303721999999996,
+          "generated_sample": "language models predict the next token"
+        }
+      }
+    },
+    {
+      "seed": 22,
+      "results_by_step": {
+        "20": {
+          "name": "normalized_and_deduplicated",
+          "seed": 22,
+          "train_steps": 20,
+          "processed_token_count_proxy": 400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 3.2939104318618773,
+          "validation_loss": 3.6330054998397827,
+          "training_seconds": 0.021256300000000117,
+          "generated_sample": "language models"
+        },
+        "60": {
+          "name": "normalized_and_deduplicated",
+          "seed": 22,
+          "train_steps": 60,
+          "processed_token_count_proxy": 1200,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 1.3688026309013366,
+          "validation_loss": 3.267010807991028,
+          "training_seconds": 0.06597209999999976,
+          "generated_sample": "language models predict the next token"
+        },
+        "120": {
+          "name": "normalized_and_deduplicated",
+          "seed": 22,
+          "train_steps": 120,
+          "processed_token_count_proxy": 2400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 0.3701697885990143,
+          "validation_loss": 3.5417444705963135,
+          "training_seconds": 0.12955099999999975,
+          "generated_sample": "language models predict the next token"
+        }
+      }
+    },
+    {
+      "seed": 33,
+      "results_by_step": {
+        "20": {
+          "name": "normalized_and_deduplicated",
+          "seed": 33,
+          "train_steps": 20,
+          "processed_token_count_proxy": 400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 3.279234027862549,
+          "validation_loss": 3.4778385162353516,
+          "training_seconds": 0.023023100000000074,
+          "generated_sample": "language models from models from"
+        },
+        "60": {
+          "name": "normalized_and_deduplicated",
+          "seed": 33,
+          "train_steps": 60,
+          "processed_token_count_proxy": 1200,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 1.4634287238121033,
+          "validation_loss": 2.7450153827667236,
+          "training_seconds": 0.06521670000000013,
+          "generated_sample": "language models from seeing token identifiers"
+        },
+        "120": {
+          "name": "normalized_and_deduplicated",
+          "seed": 33,
+          "train_steps": 120,
+          "processed_token_count_proxy": 2400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 0.3674026936292648,
+          "validation_loss": 2.989415168762207,
+          "training_seconds": 0.1337001,
+          "generated_sample": "language models predict the next token"
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "results_by_step": {
+        "20": {
+          "name": "normalized_and_deduplicated",
+          "seed": 44,
+          "train_steps": 20,
+          "processed_token_count_proxy": 400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 3.424559450149536,
+          "validation_loss": 3.688936948776245,
+          "training_seconds": 0.021079700000000035,
+          "generated_sample": "language models learn models learn"
+        },
+        "60": {
+          "name": "normalized_and_deduplicated",
+          "seed": 44,
+          "train_steps": 60,
+          "processed_token_count_proxy": 1200,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 1.576964557170868,
+          "validation_loss": 3.2309646606445312,
+          "training_seconds": 0.06548899999999991,
+          "generated_sample": "language models from models learn"
+        },
+        "120": {
+          "name": "normalized_and_deduplicated",
+          "seed": 44,
+          "train_steps": 120,
+          "processed_token_count_proxy": 2400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 0.35558919310569764,
+          "validation_loss": 3.742135763168335,
+          "training_seconds": 0.12908039999999987,
+          "generated_sample": "language models predict the next token"
+        }
+      }
+    },
+    {
+      "seed": 55,
+      "results_by_step": {
+        "20": {
+          "name": "normalized_and_deduplicated",
+          "seed": 55,
+          "train_steps": 20,
+          "processed_token_count_proxy": 400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 3.291958141326904,
+          "validation_loss": 3.511102318763733,
+          "training_seconds": 0.021518599999999832,
+          "generated_sample": "language models models models learn"
+        },
+        "60": {
+          "name": "normalized_and_deduplicated",
+          "seed": 55,
+          "train_steps": 60,
+          "processed_token_count_proxy": 1200,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 1.3406927466392518,
+          "validation_loss": 3.1252248287200928,
+          "training_seconds": 0.06771139999999987,
+          "generated_sample": "language models from seeing future tokens"
+        },
+        "120": {
+          "name": "normalized_and_deduplicated",
+          "seed": 55,
+          "train_steps": 120,
+          "processed_token_count_proxy": 2400,
+          "training_document_count": 9,
+          "training_token_count": 77,
+          "training_example_count": 32,
+          "last_10_step_train_loss": 0.3580239832401276,
+          "validation_loss": 3.6484344005584717,
+          "training_seconds": 0.13055329999999987,
+          "generated_sample": "language models predict the next token"
+        }
+      }
+    }
+  ],
+  "summary": [
+    {
+      "train_steps": 20,
+      "processed_token_count_proxy": 400,
+      "validation_loss_mean": 3.548093819618225,
+      "validation_loss_std": 0.09736026555093694,
+      "mean_training_seconds": 0.02221668000000001
+    },
+    {
+      "train_steps": 60,
+      "processed_token_count_proxy": 1200,
+      "validation_loss_mean": 3.0574565649032595,
+      "validation_loss_std": 0.19767736424203164,
+      "mean_training_seconds": 0.06572639999999996
+    },
+    {
+      "train_steps": 120,
+      "processed_token_count_proxy": 2400,
+      "validation_loss_mean": 3.437584662437439,
+      "validation_loss_std": 0.2750596564967727,
+      "mean_training_seconds": 0.1306513999999998
+    }
+  ],
+  "limitations": [
+    "Training steps are only a compute proxy, not measured FLOPs.",
+    "The corpus and model are too small for general scaling claims.",
+    "The experiment does not compare model sizes or data sizes."
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "controlled_variables": {
+    "paired_seeds": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "context_length": 5,
+    "train_steps": 60,
+    "batch_size": 4,
+    "tokenizer_vocabulary_size": 53,
+    "validation_documents": [
+      "attention helps models combine context",
+      "clean training data improves models",
+      "validation loss measures model generalization"
+    ],
+    "model": "one-layer decoder-only Transformer"
+  },
+  "changed_variable": "training data processing method",
+  "paired_runs": [
+    {
+      "seed": 11,
+      "normalized_with_duplicates": {
+        "name": "normalized_with_duplicates",
+        "seed": 11,
+        "training_document_count": 12,
+        "training_token_count": 101,
+        "training_example_count": 41,
+        "last_10_step_train_loss": 1.5661070466041564,
+        "validation_loss": 3.069814682006836,
+        "training_seconds": 0.0645342999999996,
+        "generated_sample": "language models predict the next token"
+      },
+      "normalized_and_deduplicated": {
+        "name": "normalized_and_deduplicated",
+        "seed": 11,
+        "training_document_count": 9,
+        "training_token_count": 77,
+        "training_example_count": 32,
+        "last_10_step_train_loss": 1.4726993799209596,
+        "validation_loss": 2.919067144393921,
+        "training_seconds": 0.06375699999999984,
+        "generated_sample": "language models learn models from seeing future"
+      }
+    },
+    {
+      "seed": 22,
+      "normalized_with_duplicates": {
+        "name": "normalized_with_duplicates",
+        "seed": 22,
+        "training_document_count": 12,
+        "training_token_count": 101,
+        "training_example_count": 41,
+        "last_10_step_train_loss": 1.5350203156471252,
+        "validation_loss": 3.26838481426239,
+        "training_seconds": 0.06377469999999974,
+        "generated_sample": "language models predict the next token"
+      },
+      "normalized_and_deduplicated": {
+        "name": "normalized_and_deduplicated",
+        "seed": 22,
+        "training_document_count": 9,
+        "training_token_count": 77,
+        "training_example_count": 32,
+        "last_10_step_train_loss": 1.3688026309013366,
+        "validation_loss": 3.267010807991028,
+        "training_seconds": 0.06336790000000025,
+        "generated_sample": "language models predict the next token"
+      }
+    },
+    {
+      "seed": 33,
+      "normalized_with_duplicates": {
+        "name": "normalized_with_duplicates",
+        "seed": 33,
+        "training_document_count": 12,
+        "training_token_count": 101,
+        "training_example_count": 41,
+        "last_10_step_train_loss": 1.8512722969055175,
+        "validation_loss": 2.9624202251434326,
+        "training_seconds": 0.06320259999999989,
+        "generated_sample": "language models predict the next token"
+      },
+      "normalized_and_deduplicated": {
+        "name": "normalized_and_deduplicated",
+        "seed": 33,
+        "training_document_count": 9,
+        "training_token_count": 77,
+        "training_example_count": 32,
+        "last_10_step_train_loss": 1.4634287238121033,
+        "validation_loss": 2.7450153827667236,
+        "training_seconds": 0.06321319999999986,
+        "generated_sample": "language models from seeing token identifiers"
+      }
+    },
+    {
+      "seed": 44,
+      "normalized_with_duplicates": {
+        "name": "normalized_with_duplicates",
+        "seed": 44,
+        "training_document_count": 12,
+        "training_token_count": 101,
+        "training_example_count": 41,
+        "last_10_step_train_loss": 1.7187724828720092,
+        "validation_loss": 3.3378204107284546,
+        "training_seconds": 0.06342660000000011,
+        "generated_sample": "language models predict the next token"
+      },
+      "normalized_and_deduplicated": {
+        "name": "normalized_and_deduplicated",
+        "seed": 44,
+        "training_document_count": 9,
+        "training_token_count": 77,
+        "training_example_count": 32,
+        "last_10_step_train_loss": 1.576964557170868,
+        "validation_loss": 3.2309646606445312,
+        "training_seconds": 0.06852370000000008,
+        "generated_sample": "language models from models learn"
+      }
+    },
+    {
+      "seed": 55,
+      "normalized_with_duplicates": {
+        "name": "normalized_with_duplicates",
+        "seed": 55,
+        "training_document_count": 12,
+        "training_token_count": 101,
+        "training_example_count": 41,
+        "last_10_step_train_loss": 1.5160254538059235,
+        "validation_loss": 3.299461245536804,
+        "training_seconds": 0.06758070000000016,
+        "generated_sample": "language models predict the next token"
+      },
+      "normalized_and_deduplicated": {
+        "name": "normalized_and_deduplicated",
+        "seed": 55,
+        "training_document_count": 9,
+        "training_token_count": 77,
+        "training_example_count": 32,
+        "last_10_step_train_loss": 1.3406927466392518,
+        "validation_loss": 3.1252248287200928,
+        "training_seconds": 0.06995649999999998,
+        "generated_sample": "language models from seeing future tokens"
+      }
+    }
+  ],
+  "summary": {
+    "normalized_with_duplicates_validation_loss_mean": 3.1875802755355833,
+    "normalized_with_duplicates_validation_loss_std": 0.1457289308694827,
+    "normalized_and_deduplicated_validation_loss_mean": 3.0574565649032595,
+    "normalized_and_deduplicated_validation_loss_std": 0.19767736424203164,
+    "curated_minus_baseline_mean_difference": -0.13012371063232422,
+    "curated_minus_baseline_difference_std": 0.07363036521155264,
+    "curated_win_rate": 1.0,
+    "paired_validation_loss_differences": [
+      {
+        "seed": 11,
+        "curated_minus_baseline": -0.15074753761291504
+      },
+      {
+        "seed": 22,
+        "curated_minus_baseline": -0.0013740062713623047
+      },
+      {
+        "seed": 33,
+        "curated_minus_baseline": -0.21740484237670898
+      },
+      {
+        "seed": 44,
+        "curated_minus_baseline": -0.10685575008392334
+      },
+      {
+        "seed": 55,
+        "curated_minus_baseline": -0.17423641681671143
+      }
+    ]
+  },
+  "limitations": [
+    "The corpus is intentionally tiny and cannot support general claims.",
+    "Five seeds reduce but do not eliminate random uncertainty.",
+    "Training time on a tiny CPU experiment is noisy."
+  ]
+}

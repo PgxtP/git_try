@@ -171,9 +171,14 @@ def save_curve(train_losses, val_losses):
     (OUTPUT_DIR / "training_curve.svg").write_text(svg, encoding="utf-8")
 
 
-def main():
+def main(device=None):
     set_seed()
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if device is None:
+        device = torch.device(
+            "cuda" if torch.cuda.is_available() else "cpu"
+        )
+    else:
+        device = torch.device(device)
     pairs = load_pairs(DATA_PATH)
     train_pairs = pairs[:10]
     val_pairs = pairs[10:]
