@@ -1,1 +1,31 @@
-torch==2.8.0
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# Core ML and GPU
+torch==2.14.0
+torchvision==0.29.0
+numpy==1.26.4
+mindspore==2.10.0
+
+# Data, scientific computing, and vision
+pandas==3.0.6
+scipy==1.16.3
+matplotlib==3.11.2
+opencv-python==4.11.0.86
+polars==1.44.2
+pillow==12.3.0
+bottleneck==1.6.0
+numexpr==2.14.2
+
+# Model tooling
+ultralytics==8.4.161
+safetensors==0.8.0
+tqdm==4.70.1
+dill==0.4.1
+protobuf==7.36.2
+cryptography==50.0.1
+pyopenssl==26.4.0
+
+# Notebook environment
+jupyterlab==4.6.4
+ipykernel==7.3.0

@@ -34,20 +34,29 @@ python scaling_law_experiment.py
 
 第一条命令运行 Transformer 模块、mask 和 shape 测试，第二条命令重新训练并覆盖对应的 Transformer 输出，第三条命令运行数据整理与候选评测检查，第四条命令运行 tiny language model 的数据处理对照实验，第五条命令运行固定模型与数据的训练计算量实验并保存结果。
 
+## Python 环境
+
+项目使用 Python 3.12、PyTorch 2.14 CUDA 13.0 与项目内 .venv。在 PowerShell 中运行：
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+```
+
 ## Jupyter 环境
 
-`experiments/transformer_baseline.ipynb` 使用已注册的 `machine-learning-two` kernel，显示名称为 `Python 3.13 (two)`。
+`experiments/transformer_baseline.ipynb` 使用已注册的 `machine-learning` kernel，显示名称为 `Python 3.12 (machine_learning)`。
 
 该 kernel 对应以下现有解释器：
 
 ```text
-C:\Users\20571\PyCharmMiscProject\.venv\Scripts\python.exe
+C:\Users\20571\Desktop\machine_learning\.venv\Scripts\python.exe
 ```
 
 需要单独启动 JupyterLab 时，可在 PowerShell 中运行：
 
 ```powershell
-& 'C:\Users\20571\PyCharmMiscProject\.venv\Scripts\python.exe' -m jupyter lab
+& 'C:\Users\20571\Desktop\machine_learning\.venv\Scripts\python.exe' -m jupyter lab
 ```
 
 Transformer notebook 为保证跨 CUDA 环境的基线一致性，会显式使用 CPU；这不会影响该解释器在其他项目中使用 GPU。
